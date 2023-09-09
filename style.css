@@ -1,7 +1,13 @@
+body {
+    margin: 0% 5% 0% 5%;
+    padding: 5%;
+    border: solid black 1px;
+}
+
 header {
     overflow: auto;
-    background-color: #333; 
-    color: #fff; 
+    background-color: #333;
+    color: #fff;
 }
 
 main {
@@ -15,22 +21,33 @@ header > span {
 ul {
     list-style-type: none;
     display: flex;
-    float: right;
+    justify-content: flex-end; 
     margin-left: 1%;
     margin-right: 1%;
-    /* padding: 0; */
+    padding: 0;
 }
 
 ul > li {
-    /* margin: 0; */
     margin-left: 1%;
     margin-right: 1%;
 }
 
-main > section {
-    width: 100%;
+#title {
+    float: left; 
+    margin-right: auto; 
 }
 
-#title {
-    float: left;
+ul > li:not(#title) {
+    float: right; 
 }
+
+li a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+li a:hover {
+    color: white;
+}
+
+
