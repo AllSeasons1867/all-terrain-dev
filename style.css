@@ -5,7 +5,7 @@ body {
 
 header {
     overflow: auto;
-    background-color: darkblue;
+    background-color: #021434;
     color: #fff;
     padding: 1vh 0vh;
 }
@@ -13,6 +13,10 @@ header {
 main {
     clear: both;
     padding: 0% 2.5% 2.5% 2.5%;
+}
+
+main > section {
+    height: 20vh;
 }
 
 header > span {
@@ -35,7 +39,7 @@ ul > li {
 
 footer {
     overflow: auto;
-    background-color: darkblue;
+    background-color: #021434;
     color: #fff;
     padding: 1.5vh;
     text-align: center;
@@ -57,6 +61,7 @@ li a:hover {
 .hero {
     width: 100%;
     display: inline-flex;
+    margin-bottom: 10vh;
 }
 
 .hero > div {
