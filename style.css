@@ -41,8 +41,20 @@ footer {
     text-align: center;
 }
 
+ul > li:not(#title) {
+    float: right; 
+}
+
+li a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+li a:hover {
+    color: white;
+}
+
 .hero {
-    border: solid red 1px;
     width: 100%;
     display: inline-flex;
 }
@@ -60,26 +72,41 @@ footer {
 }
 
 .hero > div > img {
-    max-width: 80%;
+    max-width: 100%;
     float: right;
+}
+
+.projects {
+    display: inline-flex;
+    padding: 0% 2.5% 0% 2.5%;
+}
+
+.projects > article {
+    padding: 1%;
+}
+
+.quote {
+    padding: 0% 10% 0% 10%;
+}
+
+.quote > :nth-child(1){
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.quote > :nth-child(2){
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.contact {
+    border: red solid 1px;
+    display: inline-flex;
 }
 
 #title {
     float: left; 
     margin-right: auto; 
 }
-
-ul > li:not(#title) {
-    float: right; 
-}
-
-li a {
-    text-decoration: none; 
-    color: inherit; 
-}
-
-li a:hover {
-    color: white;
-}
-
-
