@@ -1,6 +1,5 @@
 body {
     margin: 0% 5% 0% 5%;
-    padding: 5%;
     border: solid black 1px;
 }
 
@@ -8,10 +7,12 @@ header {
     overflow: auto;
     background-color: #333;
     color: #fff;
+    padding: 1vh 0vh;
 }
 
 main {
     clear: both;
+    padding: 0% 2.5% 2.5% 2.5%;
 }
 
 header > span {
@@ -30,6 +31,37 @@ ul {
 ul > li {
     margin-left: 1%;
     margin-right: 1%;
+}
+
+footer {
+    overflow: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 1.5vh;
+    text-align: center;
+}
+
+.hero {
+    border: solid red 1px;
+    width: 100%;
+    display: inline-flex;
+}
+
+.hero > div {
+    width: 50%;
+}
+
+.hero > :nth-child(1) {
+    padding: 2.5%;
+}
+
+.hero > :nth-child(2) {
+    padding: 2.5%;
+}
+
+.hero > div > img {
+    max-width: 80%;
+    float: right;
 }
 
 #title {
