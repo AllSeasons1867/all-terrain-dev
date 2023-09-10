@@ -108,7 +108,7 @@ li a:hover {
 
 .todo {
     border: red solid 1px;
-    padding: 5%;
+    padding: 2.5%;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -129,7 +129,7 @@ li a:hover {
 }
 
 .todo > * {
-    margin: 5%
+    margin: 2.5%
 }
 
 .todo > ul {
