@@ -107,7 +107,7 @@ li a:hover {
 }
 
 .todo {
-    border: red solid 1px;
+    /* border: red solid 1px; */
     padding: 2.5%;
     margin-left: 10%;
     margin-right: 10%;
@@ -125,6 +125,7 @@ li a:hover {
 
 .todo-list li {
     border: 1px solid #000;
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
 }
@@ -139,6 +140,10 @@ li a:hover {
 
 .todo > ul > li {
 
+}
+
+.delete-button {
+    margin: 10px 5px 5px 5px;
 }
 
 #title {

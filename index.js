@@ -18,3 +18,4 @@ addItemButton.addEventListener('click', () => {
     toDoInput.value = ''; // Clear the input field
   }
 });
+
