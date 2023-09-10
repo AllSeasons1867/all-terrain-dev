@@ -106,15 +106,38 @@ li a:hover {
     font-weight: bold;
 }
 
-.contact {
-    border: blue solid 1px;
-    width: 100%;
+.todo {
+    border: red solid 1px;
+    padding: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.contact > form {
-    border: red solid 1px;
-    width: 50%;
-    margin: auto;
+.todo-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list li {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.todo > * {
+    margin: 5%
+}
+
+.todo > ul {
+
+}
+
+.todo > ul > li {
+
 }
 
 #title {
