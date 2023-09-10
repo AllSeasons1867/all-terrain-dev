@@ -111,6 +111,7 @@ li a:hover {
     padding: 2.5%;
     margin-left: 10%;
     margin-right: 10%;
+    height: fit-content;
 }
 
 .todo-list {

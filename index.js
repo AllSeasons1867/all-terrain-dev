@@ -1,6 +1,6 @@
 let toDoList = document.querySelector('.todo-list');
 let addItemButton = document.querySelector('#addItemButton');
-
+let toDoInput = document.querySelector('#toDoInput'); // Store a reference to the input field
 
 toDoList.addEventListener('click', function(event) {
   if (event.target.classList.contains('delete-button')) {
@@ -12,6 +12,9 @@ toDoList.addEventListener('click', function(event) {
 });
 
 addItemButton.addEventListener('click', () => {
-  let toDoInput = document.querySelector('#toDoInput').value;
-  toDoList.innerHTML += `<li>${toDoInput} <button class="delete-button">Done</button></li>`;
+  let toDoText = toDoInput.value; // Get the value from the input field
+  if (toDoText.trim() !== '') { // Check if the input is not empty or only whitespace
+    toDoList.innerHTML += `<li>${toDoText} <button class="delete-button">Done</button></li>`;
+    toDoInput.value = ''; // Clear the input field
+  }
 });
